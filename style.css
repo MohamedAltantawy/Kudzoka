@@ -1,0 +1,451 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Noto Sans;
+}
+
+/* start nav */
+
+nav {
+    height: 120px;
+    width: 100%;
+    background-color: #e5f4fb;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    margin-left: -35px;
+}
+
+.logo img {
+    width: 130px;
+    margin-right: 15px;
+}
+
+.logo ul {
+    list-style: none;
+    margin-top: -10px;
+}
+
+.logo ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.logo li a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    font-size: 17px;
+    color: #858787;
+    position: relative;
+}
+
+.logo ul li a::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 4px;
+    width: 0;
+    height: 2.3px;
+    background-color: #674283;
+    transition: all .6s ease;
+}
+
+ .logo li a.active::before {
+    width: 60%;
+}
+
+.logo li a:hover::before {
+    width: 60%;
+}
+
+.login {
+    width: 130px;
+    margin-top: -10px;
+    height: 42px;
+    position: relative;
+    cursor: pointer;
+}
+
+.login img {
+    width: 100%;
+    height: 100%;
+}
+
+.login a {
+    text-decoration: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: #858787;
+    transform: translate(-50%, -50%);
+    transition: all .3s ease;
+}
+
+.login:hover a{
+    color: #50147e;
+    font-weight: bold;
+}
+
+
+/* end nav */
+
+/* start header */
+
+header {
+    height: 90vh;
+    background-image: url(matrial-2/blue_bg.png);
+    background-size: cover;
+    background-position: bottom;
+    margin-bottom: 50px;
+}
+
+.header-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.hed-left {
+    width: 50%;
+    margin-top: -140px;
+    margin-right: 20px;
+}
+
+.hed-left h1{
+    font-size: 52px;
+    color: #69787f;
+    margin-bottom: 10px;
+}
+.hed-left h1 span {
+    color: #674283;
+}
+
+.hed-left p {
+    font-size: 25px;
+    word-spacing: 1.5px;
+    line-height: 1.4;
+    color: #9ca8ae;
+}
+
+.hed-right {
+    width: 50%;
+    margin-top: -30px;
+    position: relative;
+}
+
+.hed-right img {
+    width: 120%;
+}
+
+.hed-right img.mask {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-40%);
+    width: 300px;
+}
+
+.hed-right img.cloud {
+    position: absolute;
+    bottom: 95px;
+    left: 50%;
+    transform: translateX(-40%);
+    width: 400px;
+}
+
+.wave {
+    position: absolute;
+    left: -22%;
+    bottom: -20.5%;
+    width: 98%;
+}
+
+
+/* end header */
+
+/* start services sec */
+
+.services {
+    height: 100vh;
+    padding-top: 100px;
+    background-image: url(matrial-2/second_section_.png);
+    background-size: 70% 67%;
+    background-position: 60% 25%;
+    background-repeat: no-repeat;
+    margin-bottom: 200px;
+}
+
+.services-content {
+    display: flex;
+}
+
+.services-content > div {
+    width: calc(100%/3);
+}
+
+.service {
+    text-align: center;
+}
+
+.service1 {
+    margin-bottom: 150px;
+}
+
+.service2 {
+    align-self: center;
+    margin-top: -150px;
+}
+
+.service3 {
+    align-self: flex-end;
+    margin-bottom: 50px;
+}
+
+.service1-image {
+    background-color: white;
+}
+
+.service img {
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.service3 img {
+    width: 65%;
+}
+
+.service h3 {
+    color: #828282;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.service p {
+    color: #888888;
+    font-size: 18px;
+}
+
+.why {
+    width: 90%;
+    position: relative;
+}
+
+.why img {
+    width: 100%;
+}
+
+.why-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -50%);
+    color: white;
+}
+
+.why-title span {
+    font-size: 18px;
+}
+
+.why-title h2 {
+    font-size: 45px;
+}
+
+/* end services sec */
+
+/* start support sec */
+
+.support {
+    margin-bottom: 100px;
+}
+
+.support-content {
+    width: 76%;
+    margin: auto;
+    display: flex;
+}
+
+.support-content img {
+    width: 85%;
+}
+
+.center-top {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.center-top i {
+    font-size: 24px;
+    color: #abaaaa;
+    margin-top: 250px;
+}
+
+.center-bottom {
+    text-align: center;
+    margin-top: -20px;
+}
+
+.center-bottom h3 {
+    font-size: 23px;
+    margin-bottom: 30px;
+    color: #898989;
+}
+
+.center-bottom p {
+    width: 50%;
+    margin: auto;
+    font-size: 22px;
+    color: #9b9b9b;
+}
+
+.support-side {
+    align-self: center;
+    text-align: center;
+}
+
+.support-side img {
+    width: 90%;
+}
+
+.side1 {
+   margin: -20px 40px 0 50px;
+}
+
+.side2 {
+    margin-top: 10px;
+}
+
+/* end support sec */
+
+
+/* start footer */
+
+footer {
+    padding-top: 17px;
+    background-image: url(matrial-2/Group\ 1131.png);
+    background-size: 110% 190%;
+    background-position: 30% 29.5%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footer-content > div {
+    width: 40%;
+}
+
+.footer-left {
+    margin-top: 50px;
+}
+
+.store-content {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.store {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .7s ease;
+}
+
+.store:hover {
+    transform: scale(1.1);
+}
+
+.store img {
+    width: 25px;
+    height: 25px;
+    margin-bottom: -5px;
+    margin-right: 10px;
+}
+
+.store-title span{
+    font-size: 8px;
+    color: #9b9b9b;
+}
+
+.store-title h4 {
+    color: #767575;
+    font-size: 11px;
+    margin-top: -3px;
+}
+
+
+.apps {
+    margin-bottom: 20px;
+}
+
+.apps img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    transition: all .7s ease;
+    cursor: pointer;
+}
+
+.apps img:hover {
+    transform: scale(1.2);
+}
+
+.footer-left .links {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.footer-left .links li {
+    display: inline-block;
+    margin-right: 40px;
+    transition: all .6s ease;
+}
+
+.footer-left .links li:hover {
+    transform: scale(1.2);
+}
+
+.footer-left .links li a {
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+
+.footer-right {
+    margin-right: 130px;
+}
+
+.footer-right img {
+    width: 130%;
+    margin-bottom: -5px;
+}
+/* end footer */
+
